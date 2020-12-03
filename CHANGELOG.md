@@ -1,5 +1,32 @@
 # skuba
 
+## 3.11.0
+
+### Minor Changes
+
+- 8158e01: **deps:** TypeScript 4.1
+
+  This includes formatting and linting support for new syntax features.
+
+  See the [release notes](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1) for more information.
+
+- da45f2d: **lint:** Check for unused `eslint-disable` directives
+
+  `skuba lint` will now report on unnecessary `eslint-disable` directives that should be removed:
+
+  ```diff
+  - /* eslint-disable-next-line new-cap */
+  const camelCase = 'no problems here';
+  ```
+
+### Patch Changes
+
+- 665c8a3: **deps:** prettier 2.2.0
+- 8d53d81: **deps:** babel-plugin-macros ^3.0.0
+- 02b2372: **deps:** eslint-config-skuba 1.0.10
+- 21a68fb: **deps:** prettier 2.2.1
+- dd63af8: **template:** Lock `.nvmrc`s to Node.js 12
+
 ## 3.10.2
 
 ### Patch Changes
