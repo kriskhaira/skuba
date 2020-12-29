@@ -32,6 +32,8 @@ const shouldApply = async (name: string) => {
 export const configure = async () => {
   await showLogo();
 
+  console.log("TEST ------");
+
   const [manifest] = await Promise.all([
     getDestinationManifest(),
     ensureCommands('git', 'yarn'),
